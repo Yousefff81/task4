@@ -1,0 +1,125 @@
+/* Reset and basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Font type and background color for the entire website */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+/*Space the element in terms of width and create internal space */
+.container {
+  max-width: 1200px;
+  margin:  auto;
+  padding:  20px;
+}
+/*The background color of the bar part, the color of the elements inside it, the internal space, and the center of the elements */
+.header {
+  background-color: #333;
+  color: white;
+  
+  text-align: center;
+}
+/*The font size of the title and its movement outward from below by an amount */
+.header h1 {
+  font-size: 2rem;
+  
+}
+/*Hide the dots next to the bar elements */
+nav ul {
+  list-style-type: none;
+}
+/*To move the elements side by side and create an outer space from the right and left for each element */
+nav ul li {
+  
+  display: inline-block;
+  margin: 0 10px;
+}
+/*The color of the elements, hiding the line under each element, and the size of each element */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+/*Create an internal space from above and below and place all the elements inside it in the middle of this part */
+
+.section {
+  padding: 40px 0;
+  text-align: center;
+}
+/*The font size of the title and its movement outward from below by an amount */
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+/*The font size of a description */
+.section p {
+  font-size: 1.1rem;
+  
+}
+/*Make the interior elements sit next to each other, distribute the first and last element at the end, and divide the remaining space */
+.services-grid {
+
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*Determine the background color for the main element and create an internal space for it, while creating an imaginary external space to highlight the passage and identify the speech from the left */
+.service {
+  width: 32%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+/* The font size of the title and its movement outward from below by an amount*/
+.service h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+/*Space the entire element, give it its background color, make an inner space for it, and make the outer space on all sides equal to make it in the middle */
+.contact-form {
+  max-width: 600px;
+  margin:  auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+/* Space the element in terms of width, create an internal space, create an external curvature for it, and give it external prominence and color */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+/* The color of the background of the button and the color of the words inside it, while creating an internal space for it, hiding any external protrusion, and enlarging its size*/
+.contact-form button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+/*Make the background color of the button change when you stand on  */
+.contact-form button:hover {
+  background-color: #555;
+}
+/*The background color of the element, taking the width of the screen area, making the color of the elements inside it white and in the middle, and placing it at the bottom of the page. */
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px ;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

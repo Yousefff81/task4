@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modular HTML and CSS Training</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--create a title for the company name and a bar to know what the company does, 
+      learn about it, and how to communicate with it, with the ability to access each part by clicking on it in the bar-->
+    <header class="header">
+      <div class="container">
+        <h1>Company Name</h1>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+<!--It is a welcome message for the customer to enter the site and inform him that it is the home page-->
+    <section id="home" class="section">
+      <div class="container">
+        <h2>Welcome to Our Website</h2>
+        <p>This is the home section.</p>
+      </div>
+    </section>
+
+    <!--To know the services that the company provides through the website and that the customer can benefit from-->
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service">
+            <h3>Web Design</h3>
+            <p>Beautiful and responsive web designs tailored to your needs.</p>
+          </div>
+          <div class="service">
+            <h3>Development</h3>
+            <p>
+              Full-stack web development solutions using modern technologies.
+            </p>
+          </div>
+          <div class="service">
+            <h3>SEO Optimization</h3>
+            <p>Boost your online presence with our SEO strategies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--A brief overview of the company, its history, the previous work it carried out, and its work team for clarity to the customer-->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>Learn about our team and our mission.</p>
+      </div>
+    </section>
+
+    <!--The way the customer communicates with the company through the website is by writing his name, email, and a message about his inquiry or the service he wants to perform through the company so that the company communicates with him-->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm" class="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+<!--To clarify the company name and ensure confidentiality for the customer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2024 Company Name. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
